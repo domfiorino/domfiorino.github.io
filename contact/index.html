@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<body>
+<style>
+body {
+  background-color: lightblue;
+}
+
+h2 {
+  color: black;
+  text-align: center;
+  font-size: 60px;
+}
+p {
+  font-family: verdana;
+  font-size: 20px;
+  color: black;
+}
+</style>
+
+<h2>Customer Support</h2>
+
+<p id="demo1">Welcome to the customer support page.</p>
+<p id="demo2">Press the button below to report an issue.</p>
+
+<button type="button" onclick="myFunction()">Report connectivity issue</button>
+
+<script>
+function myFunction() {
+  document.getElementById("demo2").innerHTML = "Issue reported.";
+}
+</script>
+
+
+<p>Please describe the issue you are having:</p>
+
+<form id="frm1" action="/action_page.php">
+  Issue: <input type="text" name="fname"><br>
+  <input type="button" onclick="myFunction()" value="Submit">
+</form>
+
+<script>
+function myFunction() {
+  document.getElementById("frm1").submit();
+}
+</script>
+
+</body>
+</html>
